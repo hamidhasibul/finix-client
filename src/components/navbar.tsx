@@ -13,7 +13,7 @@ export default function Navbar() {
         <img src={logo} alt="logo" />
 
         {/* Filters */}
-        <div className="flex items-center justify-between gap-2">
+        <div className="hidden md:flex items-center justify-between gap-2">
           {/* Date Selector */}
           <DatePicker />
           {/* Search Bar */}
@@ -26,15 +26,15 @@ export default function Navbar() {
           <Button
             variant={"secondary"}
             size="lg"
-            className="rounded-full text-base text-[#34735f]"
+            className="hidden lg:flex rounded-full text-base text-[#34735f]"
           >
-            <img src={logo} alt="" className="h-5" /> Leaderboard
+            <img src={logo} alt="" className="h-5" /> <span>Leaderboard</span>
           </Button>
           {/* Login/Signup Button */}
           <Button
             variant={"outline"}
             size={"lg"}
-            className="rounded-full text-base text-[#34735f] border-[#34735f]"
+            className="hidden lg:block rounded-full text-base text-[#34735f] border-[#34735f]"
           >
             Login / Signup
           </Button>
