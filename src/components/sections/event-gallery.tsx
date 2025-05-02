@@ -9,7 +9,7 @@ import { galleryImages } from "@/lib/data";
 export default function EventGallery() {
   const remainingImages = Math.max(0, galleryImages.length - 2);
   return (
-    <section className="container mx-auto pt-10">
+    <section className="container mx-auto pt-10 px-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* carousel */}
         <div className="md:col-span-2">
