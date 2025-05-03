@@ -1,10 +1,4 @@
-import {
-  ChevronLeft,
-  ChevronRight,
-  CircleDollarSign,
-  Heart,
-  MapPin,
-} from "lucide-react";
+import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import { Button } from "../ui/button";
 import { Swiper as SwiperComponent, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -13,6 +7,8 @@ import { EVENTS } from "@/lib/data";
 import { Card, CardContent } from "../ui/card";
 import difficultyAdvanced from "@/assets/difficulty-advanced-icon.svg";
 import { useState } from "react";
+import heartIcon from "@/assets/heart-icon.svg";
+import bdtIcon from "@/assets/bdt-icon.svg";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -80,11 +76,11 @@ export default function OtherEvents() {
               <div className="relative h-32">
                 <img src={event.image} alt="" className="object-cover" />
                 <Button
-                  variant="ghost"
+                  variant="link"
                   size="icon"
-                  className="absolute top-2 right-2 bg-white/80 hover:bg-white/90 rounded-full z-10"
+                  className="absolute top-2 right-2 rounded-full z-10"
                 >
-                  <Heart />
+                  <img src={heartIcon} alt="..." />
                 </Button>
               </div>
               <CardContent>
@@ -131,7 +127,7 @@ export default function OtherEvents() {
                     </p>
 
                     <div className="flex items-center gap-2">
-                      <CircleDollarSign className="h-6 w-6" />
+                      <img src={bdtIcon} alt="..." className="h-6!" />
                       <p className="text-2xl">
                         {event.fee}
                         <span className="text-gray-500">/person</span>

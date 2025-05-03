@@ -1,6 +1,7 @@
-import { EllipsisVertical, Heart, Upload } from "lucide-react";
+import { EllipsisVertical, Upload } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { EVENT_DETAILS } from "@/lib/data";
+import heartIcon from "@/assets/heart-icon.svg";
 
 export default function EventHeading() {
   return (
@@ -34,7 +35,7 @@ export default function EventHeading() {
           variant={"ghost"}
           className="rounded-full border cursor-pointer"
         >
-          <Heart />
+          <img src={heartIcon} alt="..." />
         </Button>
 
         <Button size={"icon"} variant={"ghost"} className="cursor-pointer">
