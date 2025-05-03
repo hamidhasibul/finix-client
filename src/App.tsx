@@ -1,6 +1,7 @@
-import Navbar from "./components/navbar";
-import EventDetails from "./components/sections/event-details";
-import EventGallery from "./components/sections/event-gallery";
+import Navbar from "@/components/navbar";
+import EventDetails from "@/components/sections/event-details";
+import EventGallery from "@/components/sections/event-gallery";
+import OtherEvents from "@/components/sections/other-events";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <EventGallery />
         <EventDetails />
       </div>
+      <OtherEvents />
     </>
   );
 }
